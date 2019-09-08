@@ -60,11 +60,24 @@ class ViewController: UIViewController, ARSCNViewDelegate {
         let height = CGFloat(planeAnchor.extent.z)
         
         //create plane
-        let plane = SCNPlane(width: width, height: float)
+        let plane = SCNPlane(width: width, height: height)
         
         //set color
+        plane.materials.first?.diffuse.contents = UIColor.orange
         
         //get position of anchor
+        let x = CGFloat(planeAnchor.center.x)
+        let y = CGFloat(planeAnchor.center.y)
+        let z = CGFloat(planeAnchor.center.z)
+        
+        //set position of plane
+        let planeNode = SCNNode(geometry: plane)
+        planeNode.eulerAngles.x = -.pi/2
+        
+        planeNode.position = SCNVector3(x, y, z)
+        
+        //add planeNode to scene
+        sceneView.scene.rootNode.addChildNode(planeNode)
     }
 
 
