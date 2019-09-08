@@ -15,6 +15,7 @@
 		A7FB8C4F2324D52100481972 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A7FB8C4D2324D52100481972 /* LaunchScreen.storyboard */; };
 		A7FB8C5A2324D52100481972 /* MyIosPetTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7FB8C592324D52100481972 /* MyIosPetTests.swift */; };
 		A7FB8C652324D52100481972 /* MyIosPetUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7FB8C642324D52100481972 /* MyIosPetUITests.swift */; };
+		A7FB8C752324E2FD00481972 /* Dog.scn in Resources */ = {isa = PBXBuildFile; fileRef = A7FB8C742324E2FC00481972 /* Dog.scn */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		A7FB8C602324D52100481972 /* MyIosPetUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyIosPetUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A7FB8C642324D52100481972 /* MyIosPetUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyIosPetUITests.swift; sourceTree = "<group>"; };
 		A7FB8C662324D52100481972 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A7FB8C742324E2FC00481972 /* Dog.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; name = Dog.scn; path = art.scnassets/Dog.scn; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +102,7 @@
 			isa = PBXGroup;
 			children = (
 				A7FB8C422324D51F00481972 /* AppDelegate.swift */,
+				A7FB8C742324E2FC00481972 /* Dog.scn */,
 				A7FB8C442324D51F00481972 /* art.scnassets */,
 				A7FB8C462324D51F00481972 /* ViewController.swift */,
 				A7FB8C482324D51F00481972 /* Main.storyboard */,
@@ -234,6 +237,7 @@
 			files = (
 				A7FB8C452324D51F00481972 /* art.scnassets in Resources */,
 				A7FB8C4F2324D52100481972 /* LaunchScreen.storyboard in Resources */,
+				A7FB8C752324E2FD00481972 /* Dog.scn in Resources */,
 				A7FB8C4C2324D52100481972 /* Assets.xcassets in Resources */,
 				A7FB8C4A2324D51F00481972 /* Main.storyboard in Resources */,
 			);

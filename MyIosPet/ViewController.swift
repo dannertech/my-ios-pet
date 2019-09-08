@@ -14,6 +14,12 @@ class ViewController: UIViewController, ARSCNViewDelegate {
 
     @IBOutlet var sceneView: ARSCNView!
     @IBAction func addPet(_ sender: Any) {
+        guard let dogScene = SCNScene(named: "Dog.scn"),
+            let dogNode = dogScene.rootNode.childNode(withName: "Dog", recursively: false) else {
+                return
+        }
+        dogNode.position = SCNVector3(0, 0, 0)
+        sceneView.scene.rootNode.addChildNode(dogNode)
     }
     
     override func viewDidLoad() {
