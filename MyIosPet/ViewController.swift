@@ -47,6 +47,25 @@ class ViewController: UIViewController, ARSCNViewDelegate {
         // Pause the view's session
         sceneView.session.pause()
     }
+    
+    func renderer(_ renderer: SCNSceneRenderer, didAdd node: SCNNode, for anchor: ARAnchor) {
+        //get plane anchor
+        guard let planeAnchor = anchor as? ARPlaneAnchor else {
+            return
+        }
+        
+        
+        //get width and height of anchor
+        let width = CGFloat(planeAnchor.extent.x)
+        let height = CGFloat(planeAnchor.extent.z)
+        
+        //create plane
+        let plane = SCNPlane(width: width, height: float)
+        
+        //set color
+        
+        //get position of anchor
+    }
 
 
 }
