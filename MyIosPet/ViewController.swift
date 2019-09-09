@@ -18,7 +18,8 @@ class ViewController: UIViewController, ARSCNViewDelegate {
             let dogNode = dogScene.rootNode.childNode(withName: "Dog", recursively: false) else {
                 return
         }
-        dogNode.position = SCNVector3(0, 0, 0)
+        dogNode.position = SCNVector3(100, -50, 0)
+        dogNode.rotation = SCNVector4(180, 180, 180, 180)
         sceneView.scene.rootNode.addChildNode(dogNode)
     }
     
